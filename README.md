@@ -6,12 +6,22 @@ The intended use is an already-exported project report that must match the same 
 
 ## Use
 
+[Open CSV Recipe in your browser](https://vit-percentage-recovery.cektekstudios.chatgpt.site/csv-recipe/). No account or installation.
+
 1. Choose a UTF-8 comma-separated CSV.
 2. Choose columns, exported headings and order, or load your saved recipe.
 3. Click **Check and preview**. This dry run downloads nothing.
 4. Download the checked CSV and optionally **Save recipe** for next time.
 
-The browser page can be hosted directly from `index.html`, `core.js`, `app.js` and `style.css`; no build, API key, account or package installation. The public browser URL will be recorded here after deployment is verified. Source ZIPs are available through GitHub's Code menu. Direct file-origin behaviour was not verified in the development browser because its URL policy permits only HTTP/HTTPS.
+The browser page can be hosted directly from `index.html`, `core.js`, `app.js` and `style.css`; no build, API key, account or package installation. The linked alternative HTTPS host has been checked with fictional inputs, actual downloaded CSV/recipe files and recipe reuse. The separate GitHub Pages deployment remains pending; it is not required to try this link. Source ZIPs are available through GitHub's Code menu. Direct file-origin behaviour was not verified in the development browser because its URL policy permits only HTTP/HTTPS.
+
+## Try a fictional example
+
+Download [week-one.csv](week-one.csv) and [report-recipe.json](report-recipe.json): open each file on GitHub and choose **Download raw file**. In the browser tool, select the CSV, load the recipe, then click **Check and preview**. Expect four columns and Ticket ID `00017`. **Download CSV** saves the result; preview alone does not.
+
+Then choose [week-two.csv](week-two.csv) and preview again. The saved mapping should still work after the input columns move; Ticket ID becomes `00018`. If starting in a fresh tab, select the new CSV first, then load your saved recipe.
+
+[Full worked example and expected outputs](WALKTHROUGH.md). The files are fictional; this example is not customer-use evidence. Do not upload private data to repository Issues.
 
 ## What stays unchanged
 
@@ -23,7 +33,7 @@ Limits:10MiB,50,000data rows,120columns,UTF-8/comma/doublequote CSV. Recipe vers
 
 ## Privacy
 
-CSV and recipe contents are processed in the browser. No upload endpoint, analytics, external library, API request, account or checkout is implemented. Downloaded files remain on your computer. When hosted on GitHub Pages, ordinary page requests reach GitHub; [GitHub documents security logging of visitor IP addresses](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection). This is separate from CSV contents, which the app does not send.
+CSV and recipe contents are processed in the browser. No upload endpoint, analytics, external library, API request, account or checkout is implemented. Downloaded files remain on your computer. The linked web host receives ordinary page requests. When hosted on GitHub Pages, ordinary page requests also reach GitHub; [GitHub documents security logging of visitor IP addresses](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection). This is separate from CSV contents, which the app does not send.
 
 ## Feedback on a real task
 

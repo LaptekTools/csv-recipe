@@ -1,0 +1,3 @@
+ID,IID,Title,Description,Type,URL,State,Confidential,Locked,Milestone,Labels,Author,Author Username,Assignee,Assignee Username,Created At (UTC),Updated At (UTC),Closed At (UTC),Due Date,Start Date,Parent ID,Parent IID,Parent Title,Time Estimate,Time Spent,Weight
+00017,17,Fictional export test,"First line
+Second, ""quoted"" line",Issue,https://example.invalid/17,Open,No,No,Example,"bug, export",Fictional author,fictional,Fictional reviewer,reviewer,2026-10-01 10:00:00,2026-10-02 10:00:00,,2026-10-10,,,,,3600,00090,2.00

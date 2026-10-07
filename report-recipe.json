@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "columns": [
+    {
+      "source": "Title",
+      "output": "Report title"
+    },
+    {
+      "source": "ID",
+      "output": "Ticket ID"
+    },
+    {
+      "source": "Description",
+      "output": "Notes"
+    },
+    {
+      "source": "Time Spent",
+      "output": "Seconds"
+    }
+  ]
+}
